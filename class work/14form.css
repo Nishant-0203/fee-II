@@ -1,0 +1,26 @@
+.one{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    margin-top: 150px;
+    margin-left: 1070px;
+    margin-right: 170px;
+    background-color: aliceblue;
+}
+.two{
+    width: 260px;
+}
+.three{
+    margin-left: 25px;
+}
+
+.four{
+    background-color: brown;
+    width: 200px;
+    height: 40px;
+}
+body{
+    background-image: url(images/14.2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
