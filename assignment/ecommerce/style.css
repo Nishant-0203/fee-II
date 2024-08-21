@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background: linear-gradient(to right, #c72092, #6c14d0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 35px;
+  color: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #FFD43B;
+}
+
+.icons i {
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.icons i:hover {
+  color: #FFD43B;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px 20px;
+  color: #fff;
+}
+
+.main .text {
+  max-width: 50%;
+}
+
+.main .text h1 {
+  font-size: 80px;
+  line-height: 1.1;
+  color: #c72092;
+  margin-bottom: 20px;
+}
+
+.main .text h1 span {
+  font-size: 70px;
+  display: block;
+}
+
+.main .text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  margin: 50px auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.container h1 {
+  font-size: 60px;
+  color: #c72092;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  font-size: 20px;
+  color: #6c14d0;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+}
+
+.last {
+  background: url('back.webp') no-repeat center center/cover;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.last1 {
+  font-size: 40px;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.last-2 {
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.last-3 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #e05a1f;
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: #c4c2c2;
+  color: #e05a1f;
+}
