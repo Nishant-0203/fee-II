@@ -1,0 +1,81 @@
+.logo {
+    font-size: 35px;
+    color: #fff;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD43B;
+}
+
+.icons i {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: #FFD43B;
+}
+
+.heading {
+    font-size: 48px;
+    color: #6c14d0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card-img-top {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.card b {
+    font-size: 20px;
+}
+
+.btn-custom {
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(to right, #6c14d0, #c72092);
+}

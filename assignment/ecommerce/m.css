@@ -1,0 +1,104 @@
+.logo {
+    font-size: 35px;
+    color: #fff;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD43B;
+}
+
+.icons i {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: #FFD43B;
+}
+
+.main {
+    color: #fff;
+    padding: 80px 20px 20px;
+    background-color: #f8f9fa;
+}
+
+.main .text h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    color: #c72092;
+    margin-bottom: 20px;
+}
+
+.main .text h1 span {
+    font-size: 70px;
+    display: block;
+}
+
+.main .text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.last {
+    background: url('back.webp') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.last1 {
+    font-size: 40px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.last-2 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.last-3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: #e05a1f;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: #c4c2c2;
+    color: #e05a1f;
+}

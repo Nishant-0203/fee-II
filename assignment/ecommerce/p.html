@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the range of Bajaj bikes with stunning designs and powerful performance.">
+    <title>Bajaj Bikes - Ride With Pride</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .logo {
+            font-size: 35px;
+            color: #fff;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFD43B;
+        }
+
+        .icons i {
+            margin: 0 8px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .icons i:hover {
+            color: #FFD43B;
+        }
+
+        .main {
+            color: #fff;
+            background-color: #f8f9fa;
+        }
+
+        .main .text h1 {
+            font-size: 80px;
+            line-height: 1.1;
+            color: #c72092;
+            margin-bottom: 20px;
+        }
+
+        .main .text h1 span {
+            font-size: 70px;
+            display: block;
+        }
+
+        .main .text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+        }
+
+        .last {
+            background: url('back.webp') no-repeat center center/cover;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 100px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .last1 {
+            font-size: 40px;
+            color: #ff9800;
+            margin-bottom: 20px;
+        }
+
+        .last-2 {
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+        }
+
+        .last-3 {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: #e05a1f;
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background: #c4c2c2;
+            color: #e05a1f;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .card-img-top {
+            width: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1);
+        }
+
+        .card-title {
+            font-size: 24px; /* Keep title larger */
+        }
+
+        .card-text {
+            font-size: 16px; /* Smaller font size for paragraph text */
+        }
+
+        .card-price {
+            font-size: 20px; /* Same size as paragraph text */
+        }
+
+        .btn-custom {
+            background: linear-gradient(to right, #c72092, #6c14d0);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(to right, #6c14d0, #c72092);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #c72092, #6c14d0); box-shadow: 0 0 10px rgba(0,0,0,0.5); position: fixed; width: 100%; z-index: 100;">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">Bajaj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Bikes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="icons d-flex align-items-center ms-3">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping ms-2"></i>
+                    <i class="fa-solid fa-user ms-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5"><br>
+        <br><br><br><br>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/pulsar.avif" class="card-img-top mx-auto" alt="Bajaj Bike Model 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Pulsar</h5>
+                        <p class="card-text">Experience the thrill with Bajaj Pulsar, a perfect blend of power and style.</p>
+                        <p class="card-price"><b>$2,500.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/pulsar.avif" class="card-img-top mx-auto" alt="Bajaj Bike Model 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Dominar</h5>
+                        <p class="card-text">Conquer every road with the Bajaj Dominar, designed for long journeys and adventure.</p>
+                        <p class="card-price"><b>$3,200.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/pulsar.avif" class="card-img-top mx-auto" alt="Bajaj Bike Model 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Avenger</h5>
+                        <p class="card-text">Ride in style with the Bajaj Avenger, perfect for cruising and urban adventures.</p>
+                        <p class="card-price"><b>$2,800.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/ns.png" class="card-img-top mx-auto" alt="Bajaj Bike Model 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Pulsar NS</h5>
+                        <p class="card-text">Discover the exhilarating performance of the Bajaj Pulsar NS, engineered for speed and handling.</p>
+                        <p class="card-price"><b>$2,600.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/ns.png" class="card-img-top mx-auto" alt="Bajaj Bike Model 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Discover</h5>
+                        <p class="card-text">Ride with comfort and reliability with the Bajaj Discover, perfect for city commutes.</p>
+                        <p class="card-price"><b>$1,900.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/ns.png" class="card-img-top mx-auto" alt="Bajaj Bike Model 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Pulsar RS</h5>
+                        <p class="card-text">Unleash the racer in you with the Bajaj Pulsar RS, designed for high performance.</p>
+                        <p class="card-price"><b>$3,000.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/125.webp" class="card-img-top mx-auto" alt="Bajaj Bike Model 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Avenger Cruise</h5>
+                        <p class="card-text">Experience comfort and style on the Bajaj Avenger Cruise, perfect for long rides.</p>
+                        <p class="card-price"><b>$3,500.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/125.webp" class="card-img-top mx-auto" alt="Bajaj Bike Model 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Pulsar 125</h5>
+                        <p class="card-text">Reliable and economical, the Bajaj Platina 100 is designed for everyday commuting.</p>
+                        <p class="card-price"><b>$1,600.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="product/125.webp" class="card-img-top mx-auto" alt="Bajaj Bike Model 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaj Pulsar 180</h5>
+                        <p class="card-text">Elevate your ride with the Bajaj Pulsar 180, offers a perfect balance of performance&comfort.</p>
+                        <p class="card-price"><b>$2,900.00</b></p>
+                        <div class="my-2">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
